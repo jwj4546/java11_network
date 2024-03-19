@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.List;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -76,7 +76,7 @@ class ChatClientGUI extends JFrame implements ActionListener, KeyListener {
 		setTitle("고객 창");
 		setVisible(true);
 		setLocationRelativeTo(null);
-		setSize(750, 600);
+		setSize(1200, 800);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -132,11 +132,12 @@ class ChatClientGUI extends JFrame implements ActionListener, KeyListener {
 		ChatList.append(Message);
 	}
 
-	public void AppendUserList(List<String> nickName) {
+	public void AppendUserList(ArrayList NickName) {
 		// 유저목록을 유저리스트에 띄워줍니다.
 		String name;
-		for(int i=0;i<nickName.size();i++) {
-			name = (String) nickName.get(i);
+		UserList.setText(null);
+		for (int i = 0; i < NickName.size(); i++) {
+			name = (String) NickName.get(i);
 			UserList.append(name + "\n");
 		}
 	}

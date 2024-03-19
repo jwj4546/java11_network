@@ -95,7 +95,7 @@ class ChatServerGUI extends JFrame implements ActionListener, KeyListener {
 		setTitle("메인 서버");
 		setVisible(true);
 		setLocationRelativeTo(null);
-		setSize(750, 620);
+		setSize(1200, 800);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		try {

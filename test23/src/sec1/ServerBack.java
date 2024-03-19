@@ -49,8 +49,9 @@ public class ServerBack extends Thread {
 	}
 	
 	public void transmitAll(String message) {
-		for(ReceiveInfo ri:clientList) {
+		for(int i=0;i<clientList.size();i++) {
 			try {
+				ReceiveInfo ri = clientList.elementAt(i);
 				ri.transmitAll(message);
 			} catch (Exception e) {
 				e.printStackTrace();
