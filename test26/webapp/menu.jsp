@@ -11,4 +11,6 @@
 	<li><a href="test05.jsp">표현 언어의 비교 문장</a></li>
 	<li><a href="test06.jsp">JSTL의 core tag</a></li>
 	<li><a href="test07.jsp">JSTL의 format tag</a></li>
+	<li><a href="test11.jsp">액션태그 - useBean, forward</a></li>
+	<li><a href="test12.jsp">액션태그 - forward, param</a></li>
 </ul>
